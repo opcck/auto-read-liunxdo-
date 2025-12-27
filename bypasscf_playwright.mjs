@@ -52,7 +52,7 @@ if (fs.existsSync(".env.local")) {
 }
 
 // 运行时间限制
-const runTimeLimitMinutes = Number(process.env.RUN_TIME_LIMIT_MINUTES || 20);
+const runTimeLimitMinutes = Number(process.env.RUN_TIME_LIMIT_MINUTES || 40);
 const runTimeLimitMillis = runTimeLimitMinutes * 60 * 1000;
 console.log(`运行时间限制：${runTimeLimitMinutes} 分钟 (${runTimeLimitMillis} ms)`);
 setTimeout(() => {
