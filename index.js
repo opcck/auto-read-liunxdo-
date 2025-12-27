@@ -242,7 +242,7 @@
       }
 
       // 新增：点赞前加一个随机概率判断（如30%概率）
-      const likeProbability = 0.3; // 0~1之间，0.3表示30%概率
+      const likeProbability = 0.55; // 0~1之间，0.3表示30%概率
       if (Math.random() > likeProbability) {
         console.log(`跳过第${index + 1}个按钮（未通过概率判断）`);
         return;
